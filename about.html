@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script defer src="js/scroll.js"></script>
+  
+    <script defer src="js/nav-scroll.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/nav-bar.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+    <title>Trent Swindles Portfolio</title>
+</head>
+<body id="swup" class="transition-fade">
+
+    <header>
+<div  id="nav-bar">
+    <div class="nav-large">
+        <a href="projects.html"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4697 11.0926V1.94981e-07L15.4795 2.5338e-07L16.1327 2.24397e-07L21.1903 0V11.0926L29.3809 2.76148L33.4191 6.86894L25.2188 15.2099H36.66V21.0188H25.2188L33.4191 29.3598L29.3809 33.4672L21.1903 25.1361V36.2287H21.1805H15.4795H15.4697V25.1361L7.2791 33.4672L3.24091 29.3598L11.4412 21.0188H2.50161e-07L0 15.2099H11.4412L3.24091 6.86894L7.27909 2.76148L15.4697 11.0926Z"/>
+          </svg></div></a>
+            <nav class="nav-large-links">
+                    <a class="large-link" href="index.html"><li>Projects</li></a>
+                    <a class="large-link current-page" href="about.html"><li>About Me</li></a>
+                    <a class="large-link" href="contact.html"><li>Get In Touch</li></a>
+            </nav>
+
+            <button id="open-menu" class="nav-btn hide" aria-controls="primary-navigation" aria-expanded="false">
+                <svg class="hamburger" viewBox=" 0 0 100 100" width="45">
+                    <rect class="line top" width="80" height="10"
+                    x="10" y="25" ></rect>
+                    <rect class="line middle" width="80" height="10"
+                    x="10" y="45" ></rect>
+                    <rect class="line bottom" width="80" height="10"
+                    x="10" y="65"></rect>
+                </svg>
+            </button>
+    </div>
+</div>
+
+    <div class="menu" id="menu">
+        <div class="menu-links">
+            <a class="menu-link" href="index.html"><li>Projects</li></a>
+            <a class="menu-link" href="about.html"><li>About Me</li></a>
+            <a class="menu-link" href="contact.html"><li>Get In Touch</li></a>
+        </div>
+    </div>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-about">
+                <h1>About
+                    <span class="hero-main">Me</span></h1>
+            </div>
+            <div class="spinning-star-2">
+                <dotlottie-player src="https://lottie.host/c2eccc29-d906-4717-b581-98484a07e8dd/oe8we5a15L.json" background="transparent" speed="0.75" style="width: 400px; height: 400px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+            </div>
+        </section>
+
+ 
+        <div class="about about-1">
+
+            <p class="text-align-right-mq">
+                Hi I’m Trent, I am currently living in Auckland Pukekohe. I enjoy going to the skate park and have been riding scooters since I was 5 years old with my brother at my local skate park in Clarkes Beach where I grew up. I also love reading books like fantasy fiction novels and some non-fiction books. I also really enjoy cooking.
+            </p>
+
+            <div class="img-1">
+                <img class="img-1" src="images/me.jpeg" alt="">
+                <div class="tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6714 30.8282L1.67139 7.82824L7.32824 2.17139L30.3282 25.1714L24.6714 30.8282Z" fill="#64DFDF"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H27V8H8V27H0V0Z" fill="#64DFDF"/>
+                      </svg>
+                    <h6>
+                        Me - Trent Swindles
+                    </h6>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="about about-2">
+
+            <div class="img-1">
+                <img class="img-1" src="images/sk8-park.jpeg" alt="">
+                <div class="tag position-right row-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none" transform="rotate(90)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6714 30.8282L1.67139 7.82824L7.32824 2.17139L30.3282 25.1714L24.6714 30.8282Z" fill="#64DFDF"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H27V8H8V27H0V0Z" fill="#64DFDF"/>
+                    </svg>                      
+                    <h6>
+                        My Hobby - Scootering
+                    </h6>
+                </div>
+            </div>
+
+            <p>
+                I fell in love with design when I was in high school studying photo design in year 11 and playing around with photoshop and illustrator and editing skatepark/scootering photos. I then went onto study Design for two more years at high school delving into a lot of graphics, some interactive design and some motion also.
+            </p>
+
+        </div>
+
+        <div class="about about-3">
+
+            <p class="text-align-right-mq">
+                I think I like design so much is because I am able to create solutions with an endless amount of possibilities in the area of design which can serve people and look visually appealing.
+            </p>
+
+            <div class="img-1">
+                <img class="img-1" src="images/first-work.jpg" alt="">
+                <div class="tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6714 30.8282L1.67139 7.82824L7.32824 2.17139L30.3282 25.1714L24.6714 30.8282Z" fill="#64DFDF"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H27V8H8V27H0V0Z" fill="#64DFDF"/>
+                      </svg>
+                    <h6>
+                        My First Design Project - Dailed
+                    </h6>
+                </div>
+            </div>
+
+        </div>
+
+
+
+            <h1 class="work-experience-heading">Work <br> <span class="hero-main">Experience</span></h1>
+      
+
+            <section class="work-experience-container">
+                <div class="work-experience">
+                    <div class="job-card job-card-1">
+                           <div class="job-card-text">
+                            <h2 class="job-title">Freelance Design - Vortex Fabrication/Merit Furniture</h2>
+                            <p class="job-desc">Graphic & Web Design, creation of posters, social media posts and website design.</p>
+                           </div>
+                            <button class="job-tag">2022 - 2023</button>
+                    </div>
+                    <div class="job-card job-card-2">
+                           <div class="job-card-text">
+                            <h2 class="job-title">Assistant Graphic & Web Designer - Brandright Pukekohe</h2>
+                            <p class="job-desc">Graphic & Web Design, web design, graphic design marketing material design (business cards, gazebo’s, social media, apparel).</p>
+                           </div>
+                            <button class="job-tag">2022 - 2023</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="back-top-container">
+                <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none" transform="rotate(90)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6714 30.8282L1.67139 7.82824L7.32824 2.17139L30.3282 25.1714L24.6714 30.8282Z" fill="#64DFDF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H27V8H8V27H0V0Z" fill="#64DFDF"/>
+                </svg></a>
+                <h3 class="back-top-text">Back to top</h3>
+            </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-tags">
+            <h6 class="footer-tag">Follow Me</h6>
+        <div class="footer-links">
+            <a href="Dribble">Dribble</a>
+            <a href="Instagram">Instagram</a>
+            <a href="LinkedIn">LinkedIn</a>
+        </div>
+        </div>
+            <h3 class="footer-name"><span style="font-weight: 700; color: var(--blue);">Trent Swindles</span> - Copyright © 2024</h3>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.0/gsap.min.js"></script>
+    <script src="js/hover.js"></script>
+
+</body>
+</html>
