@@ -5,7 +5,7 @@
 
 :root {
     --black: #283236;
-    --white: #FAFAFA;
+    --white: #F9F9F9;
     --blue: #64DFDF;
     --grey: #9E9E9E;
 }
@@ -16,7 +16,7 @@ html {
 
 body {
     background-color: var(--white);
-    font-family: "Montserrat", sans-serif;
+    font-family: sofia-pro, sans-serif;
 
     position: relative;
     overflow-x: hidden;
@@ -26,11 +26,12 @@ body {
 main {
     padding: 0rem 4.75rem 2rem 4.75rem;
     position: relative;
+    font-family: sofia-pro, sans-serif;
 }
 
 button {
     border: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: sofia-pro, sans-serif;
     background-color: unset;
 }
 
@@ -78,6 +79,7 @@ h1 {
     font-weight: 700;
     line-height: normal;
     color: unset;
+    font-family: regulator-nova, sans-serif;
 }
 
 .hero-main {
@@ -353,7 +355,7 @@ header {
 
 .large-link {
     color: var(--black);
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -545,7 +547,7 @@ header {
 
 .next-section-text {
     color: var(--black);
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -587,13 +589,22 @@ header {
 
 .wid-text h6 {
     color: transparent;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 700;
     width: max-content;
+    font-family: regulator-nova, sans-serif;
 }
 
-.wid-text-main {
+.wid-text-main-1 {
     background: linear-gradient( to right, var(--black) 50%,var(--blue) 50%);
+    animation: leftRight 22s linear infinite;
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+}
+
+.wid-text-main-2 {
+    background: linear-gradient( to right, var(--blue) 50%,var(--black) 50%);
     animation: leftRight 22s linear infinite;
     background-size: 200% 200%;
     background-clip: text;
@@ -608,25 +619,16 @@ header {
 
 .projects {
     display: grid;
-    grid-template-rows: auto;
-    gap: 12rem;
-    padding-top: 6rem;
-}
-
-.project-card-container {
-    display: flex;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
     overflow-x: auto;
     overflow-y: hidden;
-    gap: 0.5rem;
-    flex: 1 1 auto;
     position: relative;
-    height: 50vh;
+    height: 100%;
     width: 100%;
     transition: all 800ms ease;
 }
@@ -720,49 +722,20 @@ header {
     transition: transform .1.5s;
 }
 
-.project-card-1 {
-    opacity: 0;
-    bottom: -25%;
-}
-
-.project-card-2 {
-    opacity: 0;
-    bottom: -25%;
-}
-
-.project-card-3 {
-    opacity: 0;
-    bottom: -25%;
+#project-card-1 {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .project-card-1-text, .project-card-2-text, .project-card-3-text{
     display: grid;
-    transition: transform .1.5s;
-}
-
-.project-card-1-text {
-    top: -10%;
+    transition: transform 0s;
+    top: 25px;
+    left: -25px;
     position: fixed;
-    left: 0;
     pointer-events: none;
     z-index: 9999;
     opacity: 0;
-}
-
-.project-card-2-text {
-    top: -10%;
-    position: fixed;
-    left: 0;
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0;
-}
-.project-card-3-text {
-    top: -10%;
-    position: fixed;
-    left: 0;
-    pointer-events: none;
-    z-index: 9999;
 }
 
 /* PROJECT 1 */
@@ -843,6 +816,7 @@ header {
     display: grid;
     gap: 9rem;
     width: 100%;
+    padding-top: 8rem;
 }
 
 .project-container {
@@ -1370,6 +1344,12 @@ header {
     cursor: pointer;
 }
 
+@media (max-width:1000px) {
+    .contact-info-container {
+        flex-direction: column;
+    }   
+}
+
 @media (max-width:800px) {
     .contact {
         gap: 2rem;
@@ -1430,9 +1410,9 @@ footer {
 }
 
 .back-top-text {
-    color: var(--grey);
-    font-size: 16px;
-    font-weight: 500;
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
 }
 
 /* Page Transitions */

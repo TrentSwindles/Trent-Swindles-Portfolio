@@ -12,51 +12,51 @@
 
 // requestAnimationFrame(raf)
 
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.project-card-1',
-    start: '-70% center',
-    end: '-15% center',
-    scrub: true
-  }
-});
+// let tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.project-card-1',
+//     start: '-70% center',
+//     end: '-15% center',
+//     scrub: true
+//   }
+// });
 
-tl.to('.project-card-1', {
-  bottom: 0,
-  opacity: 1
-});
-
-
-
-let tl1 = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.project-card-2',
-    start: '-120% center',
-    end: '0% center',
-    scrub: true
-  }
-});
-
-tl1.to('.project-card-2', {
-  bottom: 0,
-  opacity: 1
-});
+// tl.to('.project-card-1', {
+//   bottom: 0,
+//   opacity: 1
+// });
 
 
 
-let tl2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.project-card-3',
-    start: '-100% center',
-    end: '0% center',
-    scrub: true
-  }
-});
+// let tl1 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.project-card-2',
+//     start: '-120% center',
+//     end: '0% center',
+//     scrub: true
+//   }
+// });
 
-tl2.to('.project-card-3', {
-  bottom: 0,
-  opacity: 1
-});
+// tl1.to('.project-card-2', {
+//   bottom: 0,
+//   opacity: 1
+// });
+
+
+
+// let tl2 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.project-card-3',
+//     start: '-100% center',
+//     end: '0% center',
+//     scrub: true
+//   }
+// });
+
+// tl2.to('.project-card-3', {
+//   bottom: 0,
+//   opacity: 1
+// });
 
 let tlh = gsap.timeline({
   scrollTrigger: {
