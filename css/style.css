@@ -506,6 +506,33 @@ header {
 
 /* NAV */
 
+/* SCROLL EFFECT */
+
+#bar {
+    height: 5px;
+    transition: all linear 0.1s;
+    position: absolute;
+    top: 133px;
+    left: 0;
+}
+
+.bar-blue {
+    background-color: var(--blue);
+}
+.bar-mind {
+    background-color: #0197F6;
+}
+.bar-green {
+    background-color: #1C6959;
+}
+.bar-purple {
+    background-color: #8A6DF4;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 /* HERO */
 
 .hero {
