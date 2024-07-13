@@ -506,6 +506,40 @@ header {
     fill: var(--blue);
 }
 
+/* .nav-btn {
+    background: transparent;
+    border: none;
+    fill: var(--black);
+    transition: transform 300ms ease-in-out, fill 300ms ease-in-out;
+}
+
+.nav-btn .line {
+    transition: transform 300ms ease-in, opacity 300ms ease-in;
+    transform-origin: center;
+}
+
+.nav-btn[aria-expanded="true"] .line {
+    transition: transform 300ms ease-in, opacity 300ms ease-in;
+}
+
+.nav-btn[aria-expanded="true"] .top {
+    transform: rotate(45deg) translateY(45px);
+}
+
+.nav-btn[aria-expanded="true"] .middle {
+    opacity: 0;
+}
+
+.nav-btn[aria-expanded="true"] .bottom {
+    transform: rotate(-45deg) translateY(-45px);
+}
+
+.nav-btn:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    fill: var(--blue);
+} */
+
 /* NAV */
 
 /* SCROLL EFFECT */
@@ -545,12 +579,22 @@ header {
     padding-top: 5rem;
 }
 
-.spinning-star-1 {
+.spinning-star-wrapper {
     position: absolute;
-    right: 0px;
-    margin-right: -200px;
+    top: 50%;
+    right: -200px; /* Move the wrapper off the right edge */
+    transform: translateY(-50%);
     z-index: -1;
+    width: 400px;
+    height: 400px;
+    pointer-events: none; /* Optional: allows clicks to pass through */
 }
+
+.spinning-star-1 {
+    width: 100%;
+    height: 100%;
+}
+
 .spinning-star-2 {
     position: absolute;
     right: 0px;
