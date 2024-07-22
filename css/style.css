@@ -74,7 +74,7 @@ button {
 }
 
 h1 {
-    font-size: clamp(40px, 10vw, 80px);
+    font-size: clamp(60px, 10vw, 80px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -399,6 +399,7 @@ header {
     transition: 500ms ease;
 }
 
+
 .logo:hover {
     fill: var(--blue);
     cursor: pointer;
@@ -577,34 +578,18 @@ header {
     align-items: center;
     position: relative;
     padding-top: 5rem;
-}
-
-.spinning-star-wrapper {
-    position: absolute;
-    top: 50%;
-    right: -200px; /* Move the wrapper off the right edge */
-    transform: translateY(-50%);
-    z-index: -1;
-    width: 400px;
-    height: 400px;
-    pointer-events: none; /* Optional: allows clicks to pass through */
-}
-
-.spinning-star-1 {
-    width: 100%;
-    height: 100%;
-}
-
-.spinning-star-2 {
-    position: absolute;
-    right: 0px;
-    margin-right: -200px;
-    z-index: -1;
-    top: 500px;
+    overflow: hidden;
 }
 
 .hero-text {
     position: relative;
+}
+
+.line {
+    border-bottom: 8px solid var(--blue);
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
 }
 
 /* HERO */
